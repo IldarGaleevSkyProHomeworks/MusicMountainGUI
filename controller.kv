@@ -1,0 +1,20 @@
+#:kivy 1.0
+
+<Controller>:
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+
+
+        TextInput:
+            id: track_id_text_input
+
+
+        Button:
+            text: 'Play'
+            on_press: root.do_play(track_id_text_input.text)
+
+        Button:
+            text: 'Stop'
+            on_press: root.do_stop()
